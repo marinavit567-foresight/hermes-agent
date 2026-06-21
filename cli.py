@@ -8357,6 +8357,14 @@ class HermesCLI(CLIAgentSetupMixin, CLICommandsMixin):
             for line in account_lines:
                 print(line)
 
+        try:
+            from tools.tool_cost_tracker import COST_TRACKER
+            _tool_block = COST_TRACKER.format_usage_block()
+            if _tool_block:
+                print(_tool_block)
+        except Exception:
+            pass
+
         # Nous credits magnitudes + monthly-grant gauge (agent-independent — also
         # runs at the no-agent / no-calls early-returns above). See the helper.
         self._print_nous_credits_block()
@@ -10194,6 +10202,12 @@ class HermesCLI(CLIAgentSetupMixin, CLICommandsMixin):
                 set_sudo_password_callback(self._sudo_password_callback)
                 set_approval_callback(self._approval_callback)
                 try:
+                    from tools.tool_cost_tracker import COST_TRACKER
+                    COST_TRACKER.begin_turn()
+                    _cost_before_turn = getattr(self.agent, 'session_estimated_cost_usd', 0.0)
+                except Exception:
+                    _cost_before_turn = 0.0
+                try:
                     set_secret_capture_callback(self._secret_capture_callback)
                 except Exception:
                     pass
@@ -10551,6 +10565,17 @@ class HermesCLI(CLIAgentSetupMixin, CLICommandsMixin):
             if self._voice_tts and response and not use_streaming_tts:
                 self._voice_speak_response_async(response)
 
+            try:
+                from tools.tool_cost_tracker import COST_TRACKER
+                _cost_after_turn = getattr(self.agent, 'session_estimated_cost_usd', 0.0)
+                COST_TRACKER.print_turn_summary(
+                    llm_turn_cost_usd=_cost_after_turn - _cost_before_turn,
+                    llm_total_cost_usd=_cost_after_turn,
+                    model=getattr(self.agent, 'model', ''),
+                    cost_status=getattr(self.agent, 'session_cost_status', 'unknown'),
+                )
+            except Exception:
+                pass
 
             # Re-queue the interrupt message (and any that arrived while we were
             # processing the first) as the next prompt for process_loop.

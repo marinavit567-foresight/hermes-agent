@@ -1003,6 +1003,11 @@ def web_search_tool(query: str, limit: int = 5) -> str:
                 provider.name, query, limit,
             )
             response_data = provider.search(query, limit)
+            try:
+                from tools.tool_cost_tracker import COST_TRACKER
+                COST_TRACKER.emit_web_search(provider)
+            except Exception:
+                pass
 
         debug_call_data["results_count"] = len(response_data.get("data", {}).get("web", []))
         result_json = json.dumps(response_data, indent=2, ensure_ascii=False)
@@ -1180,6 +1185,11 @@ async def web_extract_tool(
                 results = await asyncio.to_thread(
                     provider.extract, safe_urls, format=format
                 )
+            try:
+                from tools.tool_cost_tracker import COST_TRACKER
+                COST_TRACKER.emit_web_extract(provider, len(safe_urls))
+            except Exception:
+                pass
 
         # Merge any SSRF-blocked results back in
         if ssrf_blocked:
