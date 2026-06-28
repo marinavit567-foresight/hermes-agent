@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "skills": {
+    "Webhook Automation": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "webhook-automation/SKILL.md",
+      "computedHash": "ae6761a8e9b6f1e09ad23bba29fdc1a9442977f6379d97621bdd983e0f2d8ea6"
+    },
+    "architecture-diagram": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/creative/architecture-diagram/SKILL.md",
+      "computedHash": "bafd433b1d84973a274dde1984ec66ce1cbd10bcccea94eb859f9e16141cb47c"
+    },
+    "architecture-diagrams": {
+      "source": "aj-geddes/useful-ai-prompts",
+      "sourceType": "github",
+      "skillPath": "skills/architecture-diagrams/SKILL.md",
+      "computedHash": "f324df48ef5583e3ac57bdb1354506cffbe95c4d5d115a47fb7d05dd2e33a719"
+    },
+    "auto-claude": {
+      "source": "travisjneuman/.claude",
+      "sourceType": "github",
+      "skillPath": "skills/auto-claude/SKILL.md",
+      "computedHash": "d105bc3d4a83a92c98d0047bd589ae52b53d5b5c6e9909fdb3fb400c43a1d8de"
+    },
+    "baoyu-comic": {
+      "source": "smallnest/langgraphgo",
+      "sourceType": "github",
+      "skillPath": "examples/comic_skill_example/skills/baoyu-comic/SKILL.md",
+      "computedHash": "9cec168507a2edba35e45c0819c79685604822f51e76f1139484dfb6c67a9707"
+    },
+    "blogwatcher": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/research/blogwatcher/SKILL.md",
+      "computedHash": "0e9bbad61ba63e9f271e764872d0a62ff8f60b03ccd2dd4af3a41932bd611705"
+    },
+    "claude-code": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/autonomous-ai-agents/claude-code/SKILL.md",
+      "computedHash": "530636d5beea6c899a20746321def34d400a2d9a6e3cad3e5f4ab4a5572100d4"
+    },
+    "claude-design": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/creative/claude-design/SKILL.md",
+      "computedHash": "60cd7f5db711593abed07701237f799d2a17a420772d9bd2cc243e0c2a47a32c"
+    },
+    "codex": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/autonomous-ai-agents/codex/SKILL.md",
+      "computedHash": "bd696d57c25f75628e10055438da93e64a0163947b5c577eb58a25c641b303f6"
+    },
+    "comfyui": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/creative/comfyui/SKILL.md",
+      "computedHash": "52dfbcc53f65ff8836d031555dcbea80747745151ed4be813816acd618e98978"
+    },
+    "comfyui-api": {
+      "source": "mckruz/comfyui-expert",
+      "sourceType": "github",
+      "skillPath": "skills/comfyui-api/SKILL.md",
+      "computedHash": "c0c1646f0ad9f5c2a57be047510c385919bfc535c828eb9942a29c46657397ab"
+    },
+    "comfyui-video-pipeline": {
+      "source": "mckruz/comfyui-expert",
+      "sourceType": "github",
+      "skillPath": "skills/comfyui-video-pipeline/SKILL.md",
+      "computedHash": "1652adcced336a4559884cbaba23cce73a6c9f7184134f914a539513be915b2f"
+    },
+    "comfyui-workflow-builder": {
+      "source": "mckruz/comfyui-expert",
+      "sourceType": "github",
+      "skillPath": "skills/comfyui-workflow-builder/SKILL.md",
+      "computedHash": "4599f6517d43eb24ccfb799989fb0e2e41166811cf8049e5e263851d9f8b7721"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "computedHash": "781bd6d3f9b19f8c9af6b53d8d0e4876d0183841b565db34ca7092ffa412d111"
+    },
+    "firecrawl-lead-gen": {
+      "source": "firecrawl/firecrawl-workflows",
+      "sourceType": "github",
+      "skillPath": "skills/firecrawl-lead-gen/SKILL.md",
+      "computedHash": "3c4f97f7655382966141ed999bf1dbc76aacedc6b1124ee874db70e360cc1165"
+    },
+    "firecrawl-seo-audit": {
+      "source": "firecrawl/firecrawl-workflows",
+      "sourceType": "github",
+      "skillPath": "skills/firecrawl-seo-audit/SKILL.md",
+      "computedHash": "efec8bf676c19e0b230fe3ac152651f22ba84dccc0d545f638252c26ee97c273"
+    },
+    "gif-search": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/media/gif-search/SKILL.md",
+      "computedHash": "6e3765f690b0ff28aa684e2074616a65f9217fefabbc2f145b5422afed141061"
+    },
+    "grimoire-polymarket": {
+      "source": "franalgaba/grimoire",
+      "sourceType": "github",
+      "skillPath": "skills/grimoire-polymarket/SKILL.md",
+      "computedHash": "2b5dd82aeea705fc22d2b49929219ebe369dc9130b78313044474dc00607b801"
+    },
+    "humanize": {
+      "source": "humanizerai/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/humanize/SKILL.md",
+      "computedHash": "0c272016e5734530bf8604533aee2f293444c5d3b3e83eb234b1d65534159160"
+    },
+    "humanizer": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/creative/humanizer/SKILL.md",
+      "computedHash": "a43bded5a04e7e460717dbf0cc9c26e554bc0296bb296ff8d704a147810b4902"
+    },
+    "manim-video": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/creative/manim-video/SKILL.md",
+      "computedHash": "137b0d2ba0852bf18968e6770d63fa987c628eb14531cc6c3515ad51a6577eeb"
+    },
+    "music": {
+      "source": "elevenlabs/skills",
+      "sourceType": "github",
+      "skillPath": "music/SKILL.md",
+      "computedHash": "8c7e264dd86fe816c8933a6f0ff667cce87293c3a5209c009741492fdd425364"
+    },
+    "obsidian": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/note-taking/obsidian/SKILL.md",
+      "computedHash": "3b524d2f07d1b83374c601998e9b6f43cc88a6f40c4ac4706c150f4166031ec6"
+    },
+    "obsidian-vault": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/personal/obsidian-vault/SKILL.md",
+      "computedHash": "a5dd44e7af2bfeb2cb2e3f421fdccef62dd334038ad06e18767b0ddcf0e75c13"
+    },
+    "polymarket": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/research/polymarket/SKILL.md",
+      "computedHash": "60e76fc87b4fbd77bf89332f35b4bb37520f19845d155855fab09bac1bdd2f72"
+    },
+    "songwriting-and-ai-music": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/creative/songwriting-and-ai-music/SKILL.md",
+      "computedHash": "52d50a07b7f4a491be54c72d01db208ee1ce0df47242bb63e61af00b5821b7a7"
+    },
+    "text-to-speech": {
+      "source": "elevenlabs/skills",
+      "sourceType": "github",
+      "skillPath": "text-to-speech/SKILL.md",
+      "computedHash": "58648bd4ced042dc17c035505a2984ca82f1a373be68e6e083e0a317b76893a4"
+    },
+    "tldraw-skill": {
+      "source": "agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/tldraw/skills/tldraw-skill/SKILL.md",
+      "computedHash": "0343201312cf9962d115c3d1069cd7e00edbe6750c10965aa32418378e543908"
+    },
+    "xurl": {
+      "source": "nousresearch/hermes-agent",
+      "sourceType": "github",
+      "skillPath": "skills/social-media/xurl/SKILL.md",
+      "computedHash": "d4986e7eca14376d0a406f542f5a8d01d8888c1a1eb2efb38eaac645fa4fdf65"
+    }
+  }
+}

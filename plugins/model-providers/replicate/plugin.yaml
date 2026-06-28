@@ -1,0 +1,5 @@
+name: replicate-provider
+kind: model-provider
+version: 1.0.0
+description: Replicate — run open-source models in the cloud
+author: Nous Research

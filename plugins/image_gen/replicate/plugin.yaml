@@ -1,0 +1,7 @@
+name: replicate
+version: 1.0.0
+description: "Replicate image generation backend. FLUX 1.1 Pro Ultra — 4MP photorealism, text-to-image."
+author: Nous Research
+kind: backend
+requires_env:
+  - REPLICATE_API_TOKEN

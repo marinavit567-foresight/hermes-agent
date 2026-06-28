@@ -1,0 +1,7 @@
+name: replicate
+version: 1.0.0
+description: "Replicate video generation backend. MiniMax Video-01-Live — text-to-video and image-to-video with audio."
+author: Nous Research
+kind: backend
+requires_env:
+  - REPLICATE_API_TOKEN
